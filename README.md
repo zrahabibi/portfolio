@@ -224,6 +224,7 @@ Open your browser and visit http://localhost:5173 to see your portfolio!
 </details>
 ______________________________________________________________________________________________
 
+
 🏗️ Architecture & Core Concepts
 
 This project is a practical demonstration of several key modern web development concepts.
