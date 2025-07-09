@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "vazirmatn/vazirmatn-font-face.css";
+body {
+    font-family: Vazirmatn, sans-serif;
+}
