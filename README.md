@@ -2,9 +2,7 @@ AI-Powered Headless Portfolio Builder
 
 A dynamic, personal portfolio website builder that leverages the power of WordPress as a headless CMS and a lightning-fast Svelte.js frontend. This project features multi-language support (including RTL), responsive design, and AI-powered content assistance directly within the WordPress admin panel.
 
-✨ Live Demo & Screenshots
-
-[➡️ View Live Demo]([REPLACE WITH YOUR DEPLOYED URL])
+✨ Project Screenshots
 
 ![Project Screenshot](./assets/projectScreenshot.png)
 
@@ -98,9 +96,7 @@ Log in to the WordPress admin panel (http://localhost/wordpress/wp-admin).
 
 Install and activate the Advanced Custom Fields (ACF) plugin.
 
-Activate the "Hello Elmementor child" child theme and the [YOUR_PLUGIN_NAME] plugin.
-
-Go to ACF -> Tools and import the [REPLACE_WITH_ACF_EXPORT_FILE.json] file to set up the "Projects" custom fields.
+Activate the "Hello Elmementor child" child theme 
 
 Navigate to the "Projects" custom post type and add a few sample projects.
 
