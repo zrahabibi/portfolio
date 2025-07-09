@@ -1,28 +1,30 @@
-import adapter from '@sveltejs/adapter-auto';
+// svelte.config.js - این باید تنها محتوای این فایل باشد
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = { kit: { adapter: adapter() } };
-
-export default config;
-
-// svelte.config.js
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
+
+// این متغیر به ما کمک می‌کند که مسیر پایه را برای محیط توسعه و پروداکشن به درستی تنظیم کنیم
+const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     preprocess: vitePreprocess(),
 
     kit: {
+        // از adapter-static برای ساخت سایت استاتیک استفاده می‌کنیم
         adapter: adapter({
-            // مسیر پیش‌فرض خروجی
             pages: 'build',
             assets: 'build',
-            // این گزینه برای SPAها در GitHub Pages بسیار مهم است
             fallback: '404.html',
             precompress: false,
             strict: true
-        })
+        }),
+
+        // این بخش برای دیپلوی روی GitHub Pages حیاتی است
+        // به SvelteKit می‌گوید که سایت در یک زیرپوشه به نام /portfolio قرار خواهد گرفت
+        paths: {
+            base: dev ? '' : '/portfolio'
+        }
     }
 };
 
