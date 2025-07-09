@@ -46,21 +46,24 @@ This project was developed in phases. Here is the current status:
 Here is a high-level overview of the project's architecture:
 
 ```mermaid
-graph TD
+graph TD;
     subgraph "User Interaction"
-        User["User visits the website"] --> SvelteKit
+        User[👤 User visits the website] --> SvelteKit;
     end
+
     subgraph "Frontend (SvelteKit)"
-        SvelteKit["SvelteKit Frontend"] -->|"1. Fetches data"| API
-        API{"WordPress REST API"}
-        SvelteKit -->|"4. Renders content"| RenderedPage["Displays the portfolio"]
+        SvelteKit[⚡ SvelteKit Frontend] -->|"1. Fetches data"| API;
+        API{🌐 WordPress REST API};
+        SvelteKit -->|"4. Renders content"| RenderedPage[🖼️ Displays the portfolio];
     end
+
     subgraph "Backend (WordPress CMS)"
-        API -->|"2. Requests content"| WordPress
-        WordPress["WordPress Backend"] -->|"3. Queries database"| DB[("MySQL Database")]
-        Admin["Admin manages content"] --> WordPress
-        AI["AI Content Assistant"] -->|Helps admin| Admin
+        API -->|"2. Requests content"| WordPress;
+        WordPress[🐘 WordPress Backend] -->|"3. Queries database"| DB[(🗄️ MySQL Database)];
+        Admin[👩‍💻 Admin manages content] --> WordPress;
+        AI[🤖 AI Content Assistant] -->|Helps admin| Admin;
     end
+
     style User fill:#D6EAF8,stroke:#333,stroke-width:2px
     style RenderedPage fill:#D5F5E3,stroke:#333,stroke-width:2px
 ```
