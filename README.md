@@ -2,6 +2,9 @@
 
 A high-performance, headless portfolio builder using WordPress as the CMS and a lightning-fast SvelteKit frontend. Features AI-powered content generation, full i18n & RTL support, and a modern, decoupled architecture.
 
+<p align="center">
+  <a href="YOUR_LIVE_DEMO_URL_HERE"><strong>🚀 View Live Demo »</strong></a>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" alt="Svelte"/>
